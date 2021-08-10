@@ -110,6 +110,7 @@ class SearchFragment : Fragment() {
                         Toast.makeText(requireContext(), "selected is : ${it.name}", Toast.LENGTH_LONG).show()
                         startActivity(DetailActivity.intent(requireContext(), it))
 
+                        Log.d("MAINACTIVITY", "JHU")
                         //Using Navigation
       /*                  navController.currentBackStackEntry?.arguments =
                             Bundle().apply {
