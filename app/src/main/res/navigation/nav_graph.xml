@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+
+    <fragment
+        android:id="@+id/navHostFragmentMain"
+        android:name="raum.muchbeer.raumcompose.fragment.NavHostFragmentMain"
+        android:label="NavHostFragmentMain" >
+        <action
+            android:id="@+id/action_navHostFragmentMain_to_navHostFragmentSub"
+            app:destination="@id/navHostFragmentSub" />
+    </fragment>
+    <fragment
+        android:id="@+id/navHostFragmentSub"
+        android:name="raum.muchbeer.raumcompose.fragment.NavHostFragmentSub"
+        android:label="NavHostFragmentSub" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="raum.muchbeer.raumcompose.fragment.SearchFragment"
+        android:label="SearchFragment" />
+</navigation>

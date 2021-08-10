@@ -35,6 +35,7 @@ class DetailActivity : ComponentActivity() {
             Intent(context, DetailActivity::class.java).apply {
                 putExtra(tvShowConst, tvShow)
             }
+
     }
 
     private val retrieveTvShow : TvShow by lazy {
